@@ -21,7 +21,7 @@ public class StatistiqueController {
 		return "Hello World!";
 	}
 
-	@RequestMapping(value="/video/addStat/{idVideo}", method=RequestMethod.PUT)
+	@RequestMapping(value="/video/stat/{idVideo}", method=RequestMethod.PUT)
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void addStat(@PathVariable("idVideo") int idVideo) {
 		Statistique stat = statistiqueRepository.findByVideo(idVideo);
