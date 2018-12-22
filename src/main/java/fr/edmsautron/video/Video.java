@@ -4,26 +4,18 @@ import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 
-public class Statistique {
+public class Video {
 
 	@Id
-	private Long id;
-	
-	private int videoId;
+	private Integer id;
 	private int nombreVues;
 	private Date dateDerniereVue;
 	
-	public Long getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
-	}
-	public int getVideoId() {
-		return videoId;
-	}
-	public void setVideoId(int videoId) {
-		this.videoId = videoId;
 	}
 	public int getNombreVues() {
 		return nombreVues;
